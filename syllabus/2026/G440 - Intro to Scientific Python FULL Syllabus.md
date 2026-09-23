@@ -129,7 +129,7 @@ This class covers saving and tracking your own work with git, including forking 
 **By the end of this class, you will be able to:**
 
 - Fork a repository and configure `origin`/`upstream` remotes
-- Save and track your own work with `git add`, `git commit`, and `git log`
+- Save and track your own work on a branch with `git switch -c`, `git add`, `git commit`, and `git log`
 - Use `.gitignore`
 - Create and run code in a Jupyter Notebook
 - Write conditional logic and loops
@@ -139,9 +139,10 @@ This class covers saving and tracking your own work with git, including forking 
 1. Saving your work with git
    1. Forking a repo
    2. `origin` and `upstream` remotes
-   3. `git add` and `git commit`
-   4. `git log`
-   5. `.gitignore`
+   3. Keeping your work off `main` with `git switch -c`
+   4. `git add` and `git commit`
+   5. `git log`
+   6. `.gitignore`
 2. Jupyter Notebooks
 3. Control Flow (If/Else, For loops)
 4. Built-in Functions
@@ -152,49 +153,47 @@ This class covers saving and tracking your own work with git, including forking 
 
 ### Week 2
 
-#### Module 3: Intro to NumPy and SciPy
+#### Module 3: Intro to NumPy
 September 21, 2026
 
-This class introduces objects and classes, then covers using arrays in NumPy and basic statistics with SciPy. We will also learn how to retrieve updates to a git repo and how to read file diffs.
+This class starts with how to retrieve updates to a git repo and how to read file diffs. We will then use Markdown to document our notebooks, and cover using arrays in NumPy, including generating random numbers and running simple simulations.
 
 **By the end of this class, you will be able to:**
 
-- Describe what an object/class is
 - Pull updates from a remote repository with `git pull` and read a `git diff`
+- Write Markdown cells to document a Jupyter Notebook
 - Create and manipulate NumPy arrays (`ndarray`)
-- Perform numeric operations and simple simulations with NumPy
-- Run and interpret a correlation and a t-test with SciPy
+- Generate random numbers with NumPy and use them to run simple simulations
 
-1. Objects/Classes
-2. Staying in sync with git
+1. Staying in sync with git
    1. `git pull`
    2. Reading a `git diff`
+2. Markdown in Jupyter Notebooks
 3. Intro to NumPy
    1. NDarray
    2. Numeric operations
    3. Random numbers and Simulations
-4. Intro to SciPy - Basic stats
-   1. Correlation
-   2. T-tests
 
-#### Module 4: Intro to Matplotlib and Seaborn
+#### Module 4: Intro to Matplotlib
 September 23, 2026
 
-This class covers building plots using Matplotlib and Seaborn. In Matplotlib, we will learn the anatomy of plots and how to change them directly. We will then use Seaborn for a high-level interface. We will cover saving and pushing your work with git.
+This class starts with logging in to GitHub from the terminal with the GitHub CLI, `gh`, then pushing your work with git and collaborating on GitHub through branches and pull requests. We will then cover building plots using Matplotlib, where we will learn the anatomy of plots and how to change them directly.
 
 **By the end of this class, you will be able to:**
 
+- Log in to GitHub from the terminal with `gh auth login`
 - Push local commits to a remote with `git push`, and describe a minimal GitHub collaboration workflow
+- Create a branch and open a pull request
 - Build and customize a plot in Matplotlib
 - Build subplots in Matplotlib
-- Produce a basic statistical plot in Seaborn
 
-1. Building a plot in Matplotlib
-2. Building subplots in Matplotlib
-3. Intro to Seaborn
-4. Collaborating with git
-   1. Remotes and `git push`
-   2. A minimal GitHub workflow
+1. Connecting to GitHub with `gh`
+2. Collaborating with git
+   1. Branches with `git switch`
+   2. Remotes and `git push`
+   3. A minimal GitHub workflow: pull requests
+3. Building a plot in Matplotlib
+4. Building subplots in Matplotlib
 
 ---
 
@@ -203,24 +202,34 @@ This class covers building plots using Matplotlib and Seaborn. In Matplotlib, we
 #### Module 5: Intro to Pandas
 September 28, 2026
 
-This class introduces Pandas, a dataframe library used to load and manipulate data.
+This class introduces objects and classes, then Pandas, a dataframe library used to load and manipulate data.
 
 **By the end of this class, you will be able to:**
 
+- Describe what an object/class is
 - Create and inspect a pandas DataFrame
 - Load external data into a DataFrame
 - Compute summary statistics on a DataFrame
 - Use group-apply-combine to summarize data by category
 
-1. Dataframes
-2. Loading Data
-3. Summary Statistics
-4. Group-apply-combine
+1. Objects/Classes
+2. Intro to Pandas
+   1. Dataframes
+   2. Loading Data
+   3. Summary Statistics
+   4. Group-apply-combine
 
-#### Module 6: Pandas, continued
+#### Module 6: Pandas, continued, and Intro to Seaborn
 September 30, 2026
 
-This class covers more hands-on uses of Pandas.
+This class covers more hands-on uses of Pandas. We will then use Seaborn, a high-level interface to Matplotlib, to make statistical plots.
+
+**By the end of this class, you will be able to:**
+
+- Produce a basic statistical plot in Seaborn
+
+1. Pandas, continued
+2. Intro to Seaborn
 
 ---
 
@@ -229,15 +238,19 @@ This class covers more hands-on uses of Pandas.
 #### Module 7: Data Science in Practice
 October 5, 2026
 
-This class focuses on introducing statsmodels and scikit-learn for data analysis and data modeling.
+This class covers basic statistics with SciPy, then introduces statsmodels and scikit-learn for data analysis and data modeling.
 
 **By the end of this class, you will be able to:**
 
+- Run and interpret a correlation and a t-test with SciPy
 - Fit and interpret a statistical model with statsmodels
 - Train and evaluate a basic model with scikit-learn
 
-1. statsmodels
-2. scikit-learn
+1. Intro to SciPy - Basic stats
+   1. Correlation
+   2. T-tests
+2. statsmodels
+3. scikit-learn
 
 #### Module 8: Agentic Programming
 October 7, 2026
